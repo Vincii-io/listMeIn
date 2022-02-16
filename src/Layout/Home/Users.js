@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Users() {
     return (
-        <div className="w-48 h-fit ml-8 mt-8 border  border-gray-200 px-8 py-4">
+        <div className="w-48 h-fit mt-8 border  border-gray-200 px-8 py-4">
             <div className="w-full flex justify-center items-center">
                 <div>
                     <img
