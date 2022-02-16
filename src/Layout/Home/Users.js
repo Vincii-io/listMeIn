@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export default function Users() {
     return (
@@ -15,32 +16,39 @@ export default function Users() {
                 </div>
             </div>
             <div className="w-full text-gray-500 mt-6">
-                <div className="flex items-center gap-4">
-                    <div className="p-1 shadow-inner  rounded-full">
-                        <FaGithub className=" text-2xl" />
-                    </div>
+                <Link to="/">
+                    <div className="flex items-center gap-4">
+                        <div className="p-1 shadow-inner  rounded-full">
+                            <FaGithub className=" text-2xl" />
+                        </div>
 
-                    <div className="ml-3 text-gray-800 text-sm">
-                        <a href="!#">Github</a>
+                        <div className="ml-3 text-gray-800 text-sm">
+                            <p>Github</p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex items-center gap-4 mt-1">
-                    <div className="p-1 shadow-inner  rounded-full">
-                        <FaLinkedin className="text-2xl" />
-                    </div>
+                </Link>
 
-                    <div className="ml-3 text-gray-800 text-sm ">
-                        <a href="!#">Linkedin</a>
+                <Link to="/">
+                    <div className="flex items-center gap-4 mt-1">
+                        <div className="p-1 shadow-inner  rounded-full">
+                            <FaLinkedin className="text-2xl" />
+                        </div>
+
+                        <div className="ml-3 text-gray-800 text-sm ">
+                            <p>Linkedin</p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex items-center gap-4 mt-1">
-                    <div className="p-1 shadow-inner  rounded-full">
-                        <FaGlobe className="text-2xl" />
+                </Link>
+                <Link to="/">
+                    <div className="flex items-center gap-4 mt-1">
+                        <div className="p-1 shadow-inner  rounded-full">
+                            <FaGlobe className="text-2xl" />
+                        </div>
+                        <div className="ml-3 text-gray-800 text-sm">
+                            <p>Portfolio</p>
+                        </div>
                     </div>
-                    <div className="ml-3 text-gray-800 text-sm">
-                        <a href="!#">Portfolio</a>
-                    </div>
-                </div>
+                </Link>
             </div>
         </div>
     )
