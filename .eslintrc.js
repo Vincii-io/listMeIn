@@ -13,5 +13,9 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['react', 'prettier'],
-    rules: {},
+    rules: {
+        'space-before-function-paren': ['error', 'never'],
+        'react/react-in-jsx-scope': 'off',
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    },
 }
